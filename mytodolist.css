@@ -1,0 +1,125 @@
+/* ---------------------------------------- root variables ------------------------------ */
+
+:root {
+  --bg-header-image: linear-gradient(
+    to bottom,
+    #285076,
+    #244771,
+    #233e6b,
+    #233565,
+    #252c5e
+  );
+  --bg-color: rgba(195, 192, 192, 0.25);
+  --margin-top: 8px;
+  --margin-bottom: 8px;
+  --padding-top: 16px;
+  --padding-bottom: 16px;
+  --text-color: white;
+  --button-width: 108px;
+}
+
+/* ---------------------------------------- General ---------------------------------- */
+
+button {
+  width: var(--button-width);
+}
+
+/* ----------------------------------------- body -------------------------------------- */
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+
+/* ----------------------------------------- header ------------------------------------ */
+
+header {
+  background: var(--bg-header-image);
+  color: var(--text-color);
+}
+
+.margin-padding {
+  margin-top: var(--margin-top);
+  margin-bottom: var(--margin-bottom);
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+}
+
+/* ---------------------------- create / add task section ------------------------------- */
+
+#section1 {
+  margin-top: calc(var(--margin-top) * 5);
+}
+
+/* save task button */
+#savetaskbtn {
+  display: none;
+}
+
+/* ---------------------------- delete / edit task section ------------------------------- */
+
+/* table width */
+table tbody tr td:nth-child(1) {
+  width: 60px;
+}
+table tbody tr td:nth-child(3) {
+  width: 240px;
+}
+/* break-word */
+.task{
+  word-break: break-word;
+  text-align: left;
+}
+/* hover effect */
+.tasklist:hover {
+  background-color: #e3e3e4;
+}
+
+/* -------------------------------------- media queries ----------------------------------- */
+@media screen and (max-width: 1500px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {d
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+  /* section1 */
+  .div-form-button {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  /* center text; */
+  .xs-text-center {
+    text-align: center;
+  }
+
+  /* removing padding */
+  .margin-padding {
+    margin-top: calc(var(--margin-top) * 2);
+    margin-bottom: calc(var(--margin-bottom) * 2);
+    padding-top: calc(var(--padding-top) - var(--padding-top));
+    padding-bottom: calc(var(--padding-bottom) - var(--padding-bottom));
+  }
+
+  .div-form-button > button {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+}
+@media screen and (min-width: 993px) {
+}
+@media screen and (min-width: 769px) {
+}
+
+@media screen and (min-width: 577px) {
+}
